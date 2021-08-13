@@ -105,31 +105,58 @@ main {
 }
 /*Ajustar imagen al 100% del div de arriba*/
 .inicio img {
-  width: 20%;
+  width: 25%;
+  margin: 10px auto 10px;
+  display: block;
 }
-
-/*Imagenes Moviles*/
-/*Tamaño de la imagen o dimensiones de imagenes*/
-.slider {
-  width: 100%;
-  height: 600px;
-  margin: auto;
-  overflow: hidden;
+.inicio h1, p{
+  text-align: center;
 }
-.slider ul {
-  display: flex;
-  padding: 0;
-  width: 400%;
-
-  animation: cambio 20s infinite alternate;
+.inicio h1{
+  font-size: 40px;
+  font-family: "Brush Script MT", verdana, "lucida sans unicode",
+    "lucida grande", impact;
+  color: darkturquoise;
 }
-.slider li {
-  list-style: none;
-  width: 100%;
+.inicio p{
+  font-size: 30px;
+  text-shadow:
+		0 0 5px rgba(0,178,255,1),
+		0 0 10px rgba(0,178,255,1),
+		0 0 20px rgba(0,178,255,1),
+		0 0 40px rgba(38,104,127,1),
+		0 0 80px rgba(38,104,127,1),
+		0 0 90px rgba(38,104,127,1),
+		0 0 100px rgba(38,104,127,1),
+		0 0 140px rgba(38,104,127,1),
+		0 0 180px rgba(38,104,127,1);
+  color: #FFFFFF;
 }
-.slider img {
-  width: 100%;
-}
+/* 
+*------------Slider(DESACTIVADO)
+*Imagenes Moviles
+*Tamaño de la imagen o dimensiones de imagenes
+*.slider {
+*  width: 100%;
+*  height: 600px;
+*  margin: auto;
+*  overflow: hidden;
+*}
+*.slider ul {
+*  display: flex;
+*  padding: 0;
+*  width: 400%;
+*
+*  animation: cambio 20s infinite alternate;
+*}
+*.slider li {
+*  list-style: none;
+*  width: 100%;
+*}
+*.slider img {
+*  width: 100%;
+*}
+*/
 /*Sobre nosotros*/
 .divisor {
   border-top: 2px solid black;
