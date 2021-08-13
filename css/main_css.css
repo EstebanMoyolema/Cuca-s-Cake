@@ -339,7 +339,14 @@ main {
   main {
     padding-top: 95px;
   }
+  /* Desaparece las letras del inicio al entrar en un mobil */
   .inicio img {
+    display: none;
+  }
+  .inicio h1 {
+    display: none;
+  }
+  .inicio p {
     display: none;
   }
   .inicio {
