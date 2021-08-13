@@ -1,0 +1,623 @@
+@charset "utf-8";
+/*------------------------------------Cabezera------------------------------*/
+.header {
+  background: #fedcd2;
+  /*
+    background: #FAE5D3;
+  */
+  position: fixed;
+  width: 100%;
+}
+/*Formato de titulo*/
+#logo {
+  width: 251px;
+  font-family: "Brush Script MT", verdana, "lucida sans unicode",
+    "lucida grande", impact;
+  font-size: 55px;
+  text-align: center;
+  flex-wrap: nowrap;
+  font-weight: 800;
+}
+#logo {
+  margin-top: 10px;
+}
+.logo-nav-container a {
+  text-decoration: none;
+}
+
+/*Color de letras*/
+#sup1 {
+  color: darkturquoise;
+}
+#sup2 {
+  color: #e36394;
+}
+/*Nav*/
+.menu ul {
+  margin: 0;
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+.menu ul li {
+  display: inline-block;
+}
+/*Lineas que horizontales que separan las opciones del nav*/
+.menu li + li {
+  border-left: 2px solid #dcb239;
+  /*
+  border-left: 2px solid #EDBB99;
+  */
+}
+/*Ordenar horizontalmente el header*/
+.logo-nav-container {
+  display: flex;
+  justify-content: baseline;
+  align-items: center;
+  flex-wrap: wrap;
+}
+/*Links Header*/
+.menu ul li a {
+  font-size: 20px;
+  display: block;
+  padding: 0.5rem 1rem;
+  /*
+    color:#E74C3C;
+    */
+  color: #df744a;
+  transition: all 0.4s linear;
+  border-radius: 5px;
+  font-weight: 700;
+  /*
+    text-shadow:
+		0 0 5px rgba(0,178,255,1),
+		0 0 10px rgba(0,178,255,1),
+		0 0 20px rgba(0,178,255,1),
+		0 0 40px rgba(38,104,127,1),
+		0 0 80px rgba(38,104,127,1),
+		0 0 90px rgba(38,104,127,1),
+		0 0 100px rgba(38,104,127,1),
+		0 0 140px rgba(38,104,127,1),
+		0 0 180px rgba(38,104,127,1);
+    */
+}
+/*Menu Responsive*/
+.menu-icon {
+  display: none;
+}
+
+body {
+  font-family: "Open Sans";
+  margin: 0;
+}
+/*---------------------------------------------------------Main---------------------------------------------*/
+/*padding para que el body de la pagina comience 80px por debajo de la cabecera*/
+main {
+  background: #fbfcfc;
+  padding-top: 80px;
+}
+/*Inicio div para separar la imagen inicial*/
+.inicio {
+  background-image: url(../imagenes/nuevo_fondo_inicio.webp);
+  width: 100%;
+  height: 666px;
+  
+}
+/*Ajustar imagen al 100% del div de arriba*/
+.inicio img {
+  width: 20%;
+}
+
+/*Imagenes Moviles*/
+/*Tamaño de la imagen o dimensiones de imagenes*/
+.slider {
+  width: 100%;
+  height: 600px;
+  margin: auto;
+  overflow: hidden;
+}
+.slider ul {
+  display: flex;
+  padding: 0;
+  width: 400%;
+
+  animation: cambio 20s infinite alternate;
+}
+.slider li {
+  list-style: none;
+  width: 100%;
+}
+.slider img {
+  width: 100%;
+}
+/*Sobre nosotros*/
+.divisor {
+  border-top: 2px solid black;
+  max-width: 600px;
+  padding: 0;
+  margin: 20px auto 20px auto;
+}
+/*DIV para cuadrar texto Entrega en 24h*/
+.sobre_nosotros {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*Aricle Fondo*/
+.container-products {
+  border: 2px solid #d7dbdd;
+  background-image: url(../imagenes/Fondo_de_pagina.webp);
+}
+/*PRODUCTOS*/
+.container-products {
+  padding: 30px;
+  margin: 0px 80px 0px 80px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+}
+.product {
+  border-radius: 10px;
+  background-color: #fedcd2cc;
+  /*
+  background-color: #cccc;
+  */
+  border: 1px solid #000000;
+  /*padding: 20px;*/
+  text-align: center;
+}
+.product__img {
+  border-radius: 10px 10px 0px 0px;
+  width: 100%;
+  object-fit: cover;
+}
+.product__title {
+  font-family: "Montserrat";
+  color: #324627;
+  text-align: center;
+}
+.producto__price {
+  color: #781f21;
+  font-weight: bold;
+}
+.producto__porcion {
+  color: #781f21;
+  font-weight: bold;
+}
+.boton_ingrediente{
+  width: 30px;
+  
+}
+/*Contactos*/
+.contact-in {
+  width: 97%;
+  height: auto;
+  margin: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 05px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 0px 0px #666;
+}
+.contact-map {
+  margin-left: 5px;
+  height: 450px;
+  flex: 45%;
+}
+.contact-map iframe {
+  width: 100%;
+  height: 450px;
+}
+.contact-form {
+  height: auto;
+  flex: 50%;
+  text-align: center;
+}
+/*Contactos CSS*/
+.contact-form {
+  padding-left: 15px;
+  text-align: left;
+}
+.contact-form h1 {
+  margin-top: 0px;
+  font-size: 40px;
+  margin-bottom: 10px;
+  color: #00ced1;
+}
+.contact-form b {
+  font-size: 20px;
+  color: #e36394;
+}
+
+/*--------------------------------------------------------Footer-------------------------------------------*/
+.footer {
+  width: 100%;
+  /*
+    background: #FAE5D3;
+    */
+  background: #fedcd2;
+  padding: 2rem 0;
+  text-align: center;
+}
+.footer a {
+  padding: 5px;
+}
+
+/*----------------------------------------------------Cambiar Menu cuando la pantalla sea >413x815--------------------------------------*/
+@media only screen and (max-width: 636px) {
+  .logo-nav-container a sup {
+    font-size: 30px;
+    padding-left: 0;
+  }
+  /*Icono*/
+  .menu-icon {
+    display: block;
+    cursor: pointer;
+  }
+  /*Menu*/
+  .menu ul {
+    display: none;
+  }
+  .menu ul.show {
+    display: block;
+  }
+
+  .menu ul li {
+    display: block;
+  }
+  /*Ordenar horizontalmente el header*/
+  .logo-nav-container {
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+  }
+  /*Links Header*/
+  .menu ul li a {
+    display: block;
+    padding: 0.5rem 1rem;
+    color: black;
+    transition: all 0.4s linear;
+    border-radius: 5px;
+    color: #e36394;
+  }
+  .sobre_nosotros img {
+    width: 100%;
+    height: 100%;
+  }
+  /*Desaparece el letrero Pedido con 24 horas de anticipacion*/
+  /*Productos Responsive*/
+  .container-products {
+    margin: 5px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+  }
+  .product {
+    border: 1px solid #ccc;
+    text-align: center;
+    border-radius: 10px;
+  }
+  .product__img {
+    width: 100%;
+    object-fit: cover;
+  }
+  .product__title {
+    text-align: center;
+  }
+  .producto__price {
+    color: #e36394;
+    font-weight: bold;
+  }
+  .producto__porcion {
+    color: #e36394;
+    font-weight: bold;
+  }
+
+  /*Mapa responsive*/
+  .contact-in {
+    width: 100%;
+    margin: 1px;
+    margin-left: 0;
+    padding: 0;
+  }
+  .contact-map iframe {
+    align-items: center;
+    border-color: #e36394;
+    flex-wrap: wrap;
+    width: 98%;
+    height: 450px;
+  }
+  .contact-form {
+    text-align: center;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  /*Imagen de presentacion*/
+  main {
+    padding-top: 95px;
+  }
+  .inicio img {
+    display: none;
+  }
+  .inicio {
+    background-image: url(../imagenes/Background_movil.webp);
+    background-size: 100% 100%;
+    display: flex;
+    height: 730px;
+  }
+}
+
+/*--------------------------------------------Imagenes Moviles Tiempo de cambio de imagen---------------------------------*/
+@keyframes cambio {
+  0% {
+    margin-left: 0;
+  }
+  20% {
+    margin-left: 0;
+  }
+
+  25% {
+    margin-left: -100%;
+  }
+  45% {
+    margin-left: -100%;
+  }
+
+  50% {
+    margin-left: -200%;
+  }
+  70% {
+    margin-left: -200%;
+  }
+
+  75% {
+    margin-left: -300%;
+  }
+  100% {
+    margin-left: -300%;
+  }
+}
+
+/*--------------------------------------------PRUEBA-BOTON-WATSAPP---------------------------------*/
+.float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 15px;
+  right: 16px;
+  background-color: #4cc370;
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 2px 2px 3px #999;
+  z-index: 100;
+}
+.float:hover {
+  text-decoration: none;
+  color: #fff;
+  background-color: #3d9e5a;
+}
+
+.my-float {
+  margin-top: 16px;
+}
+/*------------------------------------------------------------------------------------------------*/
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+/* offset-x > | offset-y ^| blur-radius | spread-radius | color */
+@keyframes pulse {
+  0% {
+    transform: scale(1, 1);
+  }
+  50% {
+    opacity: 0.3;
+  }
+  100% {
+    transform: scale(1.45);
+    opacity: 0;
+  }
+}
+.pulse {
+  -webkit-animation-name: pulse;
+  animation-name: pulse;
+}
+
+.nav-bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-content: flex-end;
+  width: auto;
+  height: auto;
+  position: fixed;
+  z-index: 8;
+  bottom: 0px;
+  right: 0px;
+  padding: 5px;
+  margin: 0px;
+}
+@media (max-width: 360px) {
+  .nav-bottom {
+    width: 320px;
+  }
+}
+
+.whatsapp-button {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  width: 60px;
+  height: 60px;
+  z-index: 8;
+  transition: 0.3s;
+  margin: 10px;
+  padding: 7px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 50%;
+  background-color: white;
+  /* offset-x > | offset-y ^| blur-radius | spread-radius | color */
+  -webkit-box-shadow: 1px 1px 6px 0px rgba(68, 68, 68, 0.705);
+  -moz-box-shadow: 1px 1px 6px 0px rgba(68, 68, 68, 0.705);
+  box-shadow: 1px 1px 6px 0px rgba(68, 68, 68, 0.705);
+}
+
+.circle-anime {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  align-content: center;
+  width: 60px;
+  height: 60px;
+  top: 15px;
+  right: 15px;
+  border-radius: 50%;
+  transition: 0.3s;
+  background-color: #77bb4a;
+  animation: pulse 1.2s 4s ease 4;
+}
+
+.popup-whatsapp {
+  display: none;
+  position: absolute;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: auto;
+  height: auto;
+  padding: 10px;
+  bottom: 85px;
+  right: 6px;
+  transition: 0.5s;
+  border-radius: 15px;
+  background-color: white;
+  /* offset-x > | offset-y ^| blur-radius | spread-radius | color */
+  -webkit-box-shadow: 2px 1px 6px 0px rgba(68, 68, 68, 0.705);
+  -moz-box-shadow: 2px 1px 6px 0px rgba(68, 68, 68, 0.705);
+  box-shadow: 2px 1px 6px 0px rgba(68, 68, 68, 0.705);
+  animation: slideInRight 0.6s 0s both;
+}
+.popup-whatsapp > div {
+  margin: 5px;
+}
+@media (max-width: 680px) {
+  .popup-whatsapp p {
+    font-size: 0.9em;
+  }
+}
+.popup-whatsapp > .content-whatsapp.-top {
+  display: flex;
+  flex-direction: column;
+}
+.popup-whatsapp > .content-whatsapp.-top p {
+  color: #585858;
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 1em;
+}
+.popup-whatsapp > .content-whatsapp.-bottom {
+  display: flex;
+  flex-direction: row;
+}
+
+.closePopup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 28px;
+  height: 28px;
+  margin: 0px 0px 0px 0px;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: #4cc370;
+  -webkit-box-shadow: 1px 1px 2px 0px rgba(68, 68, 68, 0.705);
+  -moz-box-shadow: 1px 1px 2px 0px rgba(68, 68, 68, 0.705);
+  box-shadow: 1px 1px 2px 0px rgba(68, 68, 68, 0.705);
+}
+.closePopup:hover {
+  background-color: #3d9e5a;
+  transition: 0.3s;
+}
+
+.send-msPopup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  margin: 0px 0px 0px 5px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  -webkit-box-shadow: 1px 1px 2px 0px rgba(68, 68, 68, 0.705);
+  -moz-box-shadow: 1px 1px 2px 0px rgba(68, 68, 68, 0.705);
+  box-shadow: 1px 1px 2px 0px rgba(68, 68, 68, 0.705);
+}
+.send-msPopup:hover {
+  background-color: #f8f8f8;
+  transition: 0.3s;
+}
+
+.is-active-whatsapp-popup {
+  display: flex;
+  animation: slideInRight 0.6s 0s both;
+  background-color: #fafafa;
+}
+
+input.whats-input[type="text"] {
+  width: 250px;
+  height: 40px;
+  box-sizing: border-box;
+  border: 0px solid #ffffff;
+  border-radius: 20px;
+  font-size: 1em;
+  background-color: #ffffff;
+  padding: 0px 0px 0px 10px;
+  -webkit-transition: width 0.3s ease-in-out;
+  transition: width 0.3s ease-in-out;
+  outline: none;
+  transition: 0.3s;
+}
+@media (max-width: 420px) {
+  input.whats-input[type="text"] {
+    width: 225px;
+  }
+}
+input.whats-input::placeholder {
+  /* Most modern browsers support this now. */
+  color: rgba(68, 68, 68, 0.705);
+  opacity: 1;
+}
+input.whats-input[type="text"]:focus {
+  background-color: #f8f8f8;
+  -webkit-transition: width 0.3s ease-in-out;
+  transition: width 0.3s ease-in-out;
+  transition: 0.3s;
+}
+
+.icon-whatsapp-small {
+  width: 24px;
+  height: 24px;
+}
+
+.icon-whatsapp {
+  width: 45px;
+  height: 45px;
+}
+
+.icon-font-color {
+  color: #ffffff;
+}
+
+.icon-font-color--black {
+  color: #333333;
+}
+/*--------------------------------------------PRUEBA-BOTON-WATSAPP---------------------------------*/
